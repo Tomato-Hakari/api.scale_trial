@@ -53,7 +53,7 @@ class TopController < ApplicationController
 
             temp1 = JSON.parse(page5.body)
 
-            temp2 = {"date" => temp1['data']['date'], "keydata" => temp1['data']['keydata'], "model" => temp1['data']['model'], "tag" => temp1['data']['tag']}
+            temp2 = {"date" => temp1["data"]["date"], "keydata" => temp1["data"]["keydata"], "model" => temp1["data"]["model"], "tag" => temp1["data"]["tag"]}
 
             output = JSON.pretty_generate(temp2)
 
