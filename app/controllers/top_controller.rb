@@ -47,7 +47,7 @@ class TopController < ApplicationController
         tag_params = 6
         output = ''
 
-        File.open('healthTest.json','wb') do |f|
+        File.open('app/views/top/healthTest.json','wb') do |f|
             url2 = "https://www.healthplanet.jp/status/innerscan.json?access_token=#{access_token}&date=#{date_type}&tag=#{tag}"
             page5 = agent.post(url2)
 
