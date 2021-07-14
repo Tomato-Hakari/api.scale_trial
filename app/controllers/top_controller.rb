@@ -51,7 +51,11 @@ class TopController < ApplicationController
             url2 = "https://www.healthplanet.jp/status/innerscan.json?access_token=#{access_token}&date=#{date_type}&tag=#{tag}"
             page5 = agent.post(url2)
 
-            output = JSON.pretty_generate(JSON.parse(page5.body))
+            temp1 = JSON.parse(page5.body)
+
+            temp2 = {"date" => temp1['data']['date'], "keydata" => temp1['data']['keydata'], "model" => temp1['data']['model'], "tag" => temp1['data']['tag']}
+
+            output = JSON.pretty_generate(temp2)
 
             output.lstrip!
 
