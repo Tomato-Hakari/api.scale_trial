@@ -53,6 +53,10 @@ class TopController < ApplicationController
 
             output = JSON.pretty_generate(JSON.parse(page5.body))
 
+            output.lstrip!
+
+            puts output
+
             JSON.dump(output,f)
         end
 
