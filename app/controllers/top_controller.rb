@@ -9,10 +9,10 @@ class TopController < ApplicationController
 
     def healthplanet
 
-        client_id = '2233.XFqg27ewnu.apps.healthplanet.jp'
-        client_secret = '1620821052142-BV8Jk5PHJfrIxWAQp27clZDt0cy6fysKAw74mwh4'
-        user_id = 'Teraken_Terao2021'
-        user_pass = 'muroepiaJet1'
+        client_id = '2372.eJBi93F9fc.apps.healthplanet.jp'
+        client_secret = '1626310603695-oXQuPUBFeAnOLnxArpxnkp3KID427EzcMyT4KE5C'
+        user_id = 'Teraken_Shuryo'
+        user_pass = 'Hakari'
         redirect_uri = 'https://www.healthplanet.jp/success.html'
 
         agent = Mechanize.new
